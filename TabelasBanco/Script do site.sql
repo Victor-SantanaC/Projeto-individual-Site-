@@ -3,14 +3,14 @@ CREATE DATABASE fairplay;
 
 USE fairplay;
 
-CREATE TABLE cadastro (
-	idCadastro INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE usuario(
+	idUsuario INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50),
     cpf char(11),
 	email VARCHAR(50),
 	senha VARCHAR(20)
 );
--- pergunta 1
+-- pergunta 1 Você joga videogame?
 create table registro1 (
 	idRegistro1 INT PRIMARY KEY AUTO_INCREMENT,
 	qtdsim int,
@@ -19,7 +19,7 @@ create table registro1 (
 	momento DATETIME
 );
 
--- pergunta 3
+-- pergunta 3 Você conhece alguma pessoa que possui algum tipo de deficiência?
 create table registro2 (
 	idResgistro2 INT PRIMARY KEY AUTO_INCREMENT,
 	qtdsim int,
@@ -27,7 +27,7 @@ create table registro2 (
 	momento DATETIME
 );
 
--- pergunta 4
+-- pergunta 4 Você conhece alguma pessoas que possui algum tipo de deficiência que joga videogame?
 create table registro3 (
 	idRegistro3 INT PRIMARY KEY AUTO_INCREMENT,
 	qtdsim int,
@@ -35,7 +35,7 @@ create table registro3 (
 	qtdnaojoga int,
 	momento DATETIME
 );
--- pergunta 5
+-- pergunta 6 Você acha importante que as empresas de jogos e videogames incluam pessoas PCD em suas comunidades?
 create table registro4 (
 	idRegistro4 INT PRIMARY KEY AUTO_INCREMENT,
 	qtdsim int,

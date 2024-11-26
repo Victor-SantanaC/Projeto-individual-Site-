@@ -6,103 +6,102 @@
 }
 
 body {
-    margin: 0px;
+    margin: 0;
     font-family: "Fredoka";
-    background-color: rgb(228, 228, 228);
-    background-position: center;
-    background-size: cover;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.header {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     width: 100%;
-    height: 90px;
-    z-index: 10;
-    background-color: #aeb5c6;
-}
-
-.header .container {
-    padding-left: 30px;
-    padding-right: 60px;
+    height: 993px;
     display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
 }
 
-.header .container img {
-    width: 250px;
-    height: 80px;
-}
-
-.container .navbar {
-    display: flex;
-    width: 1170px;
-    height: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.container .opcoes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 450px;
-    min-width: 450px;
-    color: #000000;
-    font-size: 22px;
-    font-weight: bold;
+.dashboard{
     padding-left: 20px;
-    padding-right: 20px;
-}
-
-.opcao{
-    display: inline-block;
-    transition: transform 0.5s ease;
-    text-decoration: none;
-    color: #0739c2;
-}
-
-.opcao:hover {
-    transform: scale(1.4);
-    cursor: pointer;
-}
-
-
-.container .botoes {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    width: 1780px;
+    height: 870px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    width: 220px;
-    min-width: 220px;
+    flex-direction: row;
 }
 
-.botoes button {
-    width: 100px;
-    height: 30px;
-    border: 2px solid;
-    border-radius: 5px;
-    color:  black;
-    font-size: 16px;
-    font-weight: lighter;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    transition: transform 0.5s ease;
+.header p {
+    color: #000000;
+    font-size: 30px;
 }
 
-.botoes button:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+.header-dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.dashboard .coluna-grafico{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 870px;
+    width: 900px;
+}
+
+.coluna-grafico .grafico{
+    border: 15px solid #EEEEEE;
+    width: 870px;
+    height: 400px;
+}
+
+.dashboard .coluna-grafico2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px;
+    height: 870px;
+}
+
+
+.coluna-grafico2 .grafico2{
+    border: 15px solid #EEEEEE;
+    width: 870px;
+    height: 400px;
+}
+
+body .coluna-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(#db7c00, #db7c00);
+    width: 80px;
+    height: 993px;
+
+    i {
+        font-size: 60px;
+        padding-top: 5px;
+        color: #15491a;
+    }
+
+    #selCabine {
+        color: white;
+        border: none;
+        background-color: #15491a;
+        text-align: center;
+        font-size: 26px;
+        width: 50px;
+        height: 50px;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+body .header {
+    background: linear-gradient(to right,#db7c00, #db7c00);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
