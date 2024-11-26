@@ -20,17 +20,21 @@
         <div class="dashboard">
             <div class="coluna-grafico">
                 <div class="grafico">
+                <h2 style="text-align: center;">1. Você joga videogame?</h2>
                 <canvas id="myChart" style="position: relative; height: 52vh; width:60vw"></canvas>
                 </div>
-                <div class="grafico">   
+                <div class="grafico"> 
+                <h2 style="text-align: center;">4. Você conhece alguma pessoas que possui algum tipo de deficiência que joga videogame?</h2>  
                 <canvas id="myChart2" style="position: relative; height: 52vh; width:60vw"></canvas>
                 </div>
             </div>
             <div class="coluna-grafico2">
-                <div class="grafico2">   
+                <div class="grafico2">
+                <h2>3. Você conhece alguem que é PCD?</h2>    
                 <canvas id="myChart3" style="position: relative; height: 52vh; width:60vw"></canvas>
-                </div>
-                <div class="grafico2">   
+                </div><br><br>
+                <div class="grafico2">
+                <h2>6. As empresas videogames deve incluir pessoas PCD?</h2>    
                 <canvas id="myChart4" style="position: relative; height: 52vh; width:60vw"></canvas>
                 </div>
             </div>
@@ -53,23 +57,23 @@
             label: 'Sim, eu jogo',
             backgroundColor: '#33c635',
             borderColor: '#33c635',
-            data: [40, 0, 0],
+            data: [28, 0, 0],
         },
         {
             label: 'Não, eu nunca joguei',
             backgroundColor: '#f32423',
             borderColor: '#f32423',
-            data: [0, 45, 0],
+            data: [0, 12, 0],
         },
         {
             label: 'Não jogo mais',
             backgroundColor: '#fed000',
             borderColor: '#fed000',
-            data: [0, 0, 35],
+            data: [0, 0, 15],
         }
     ]
     };
-
+//55
     const labels2 = [
         'Sim, conheço',
         'Não conheço',
@@ -82,35 +86,29 @@
             label: 'Sim, conheço',
             backgroundColor: '#33c635',
             borderColor: '#33c635',
-            data: [40, 0, 0],
+            data: [5, 0, 0],
         },
         {
             label: 'Não conheço',
             backgroundColor: '#f32423',
             borderColor: '#f32423',
-            data: [0, 45, 0],
+            data: [0, 50, 0],
         },
         {
             label: 'Sim, eu conheço mas ela não joga',
             backgroundColor: '#fed000',
             borderColor: '#fed000',
-            data: [0, 0, 35],
+            data: [0, 0, 0],
         }
     ]
     };
-
-    const labels3 = [
-        'Sim, eu jogo',
-        'Não, eu nunca joguei',
-        'Não jogo mais',
-    ];
 
     const dataPie3 = {
     labels: ['Sim, conheço ', 'Não conheço '],
     datasets: [{
         label: 'Resposta sobre jogar',
         backgroundColor: ['#33c635', '#f32423'], // Cores das fatias
-        data: [40, 45],
+        data: [5, 50],
     }]
 };
 
@@ -119,7 +117,7 @@
     datasets: [{
         label: 'Resposta sobre conhecer',
         backgroundColor: ['#33c635', '#f32423', '#fed000'], // Cores das fatias
-        data: [40, 45, 35],
+        data: [30, 0, 25],
     }]
 };
 

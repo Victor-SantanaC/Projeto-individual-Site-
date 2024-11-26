@@ -75,7 +75,7 @@ body .coluna-lateral {
     justify-content: flex-start;
     background: linear-gradient(#db7c00, #db7c00);
     width: 80px;
-    height: 993px;
+    height: 1100px;
 
     i {
         font-size: 60px;
@@ -99,7 +99,7 @@ body .coluna-lateral {
 
 body .header {
     background: linear-gradient(to right,#db7c00, #db7c00);
-    width: 100%;
+    width: 110%;
     height: 70px;
     display: flex;
     align-items: center;

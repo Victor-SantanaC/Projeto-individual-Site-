@@ -25,5 +25,16 @@ function verConfirmaSenha() {
 }
 
 function entrarLogin () {
-    window.location.href = "tela-login.html"
+    const nome = nome_input.value
+    const cpf = Number(campo_cpf.value)
+    const email = email_input.value
+    const senha = senha_input.value
+    const confirmarSenha = senha_confirm_input.value
+
+    if(!nome || !cpf || !email || !senha || !confirmarSenha){
+        return alert("Prencha todos os campos")
+    } else{
+        window.location.href = "login.html"
+    }
+
 }

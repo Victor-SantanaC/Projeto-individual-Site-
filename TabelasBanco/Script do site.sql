@@ -16,7 +16,9 @@ create table registro1 (
 	qtdsim int,
 	qtdnunca int,
 	qtdnao_joga_mais int,
-	momento DATETIME
+	momento DATETIME,
+	fkUsuario INT,
+	FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario)
 );
 
 -- pergunta 3 Você conhece alguma pessoa que possui algum tipo de deficiência?
@@ -24,7 +26,9 @@ create table registro2 (
 	idResgistro2 INT PRIMARY KEY AUTO_INCREMENT,
 	qtdsim int,
 	qtdnao int,
-	momento DATETIME
+	momento DATETIME,
+	fkUsuario INT,
+	FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario)
 );
 
 -- pergunta 4 Você conhece alguma pessoas que possui algum tipo de deficiência que joga videogame?
@@ -33,13 +37,17 @@ create table registro3 (
 	qtdsim int,
 	qtdnao int,
 	qtdnaojoga int,
-	momento DATETIME
+	momento DATETIME,
+	fkUsuario INT,
+	FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario)
 );
 -- pergunta 6 Você acha importante que as empresas de jogos e videogames incluam pessoas PCD em suas comunidades?
 create table registro4 (
 	idRegistro4 INT PRIMARY KEY AUTO_INCREMENT,
 	qtdsim int,
 	qtdnao int,
-	qtdja_ouvi int,
-	momento DATETIME
+	qtdsim_mas_possivel int,
+	momento DATETIME,
+	fkUsuario INT,
+	FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario)
 );
